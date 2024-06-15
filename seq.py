@@ -130,7 +130,7 @@ def generate_text_seq2seq(seed_text, next_words, model, max_sequence_len):
         words.append(output_word)
     return ' '.join(words)
 
-print(generate_text_seq2seq("张无忌", 50, model, max_sequence_len))
+print(generate_text_seq2seq("", 50, model, max_sequence_len))
 
 
 
