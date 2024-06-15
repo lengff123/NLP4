@@ -68,4 +68,4 @@ def generate_text_transformer(seed_text, next_words, model, tokenizer):
     output = model.generate(input_ids, max_length=next_words + len(input_ids[0]), num_return_sequences=1)
     return tokenizer.decode(output[0], skip_special_tokens=True)
 
-print(generate_text_transformer("张无忌", 50, model, tokenizer))
+print(generate_text_transformer("", 50, model, tokenizer))
